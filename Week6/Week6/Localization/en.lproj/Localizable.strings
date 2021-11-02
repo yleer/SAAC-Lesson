@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Week6
+
+  Created by Yundong Lee on 2021/11/01.
+  
+*/
+
+"tab_home" = "home";
+"tab_setting" = "setting";
+"entert_text_placeholder" = "Please Enter a Title";
+"welcome_text" = "hello! nice to meet you";

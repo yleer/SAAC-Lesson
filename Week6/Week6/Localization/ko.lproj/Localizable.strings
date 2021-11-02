@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Week6
+
+  Created by Yundong Lee on 2021/11/01.
+  
+*/
+
+
+"tab_home" = "집";
+"tab_setting" = "설정";
+"entert_text_placeholder" = "제목을 입력해주세요";
+"welcome_text" = "안녕하세요 반갑습니다";

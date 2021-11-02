@@ -1,0 +1,9 @@
+/* 
+  Setting.strings
+  Week6
+
+  Created by Yundong Lee on 2021/11/01.
+  
+*/
+"data_backup" = "Backup";
+"data_restore" = "Restore";

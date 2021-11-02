@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  Week6
+
+  Created by Yundong Lee on 2021/11/01.
+  
+*/
+
+CFBundleDisplayName = "My Diary";
+
+NSCameraUsageDescription = "no auth for camera";

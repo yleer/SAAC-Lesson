@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  Week6
+
+  Created by Yundong Lee on 2021/11/01.
+  
+*/
+
+CFBundleDisplayName = "내 일기장";
+
+NSCameraUsageDescription = "카메라 권한 확인";
