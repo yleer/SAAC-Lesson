@@ -11,3 +11,7 @@
 "tab_setting" = "설정";
 "entert_text_placeholder" = "제목을 입력해주세요";
 "welcome_text" = "안녕하세요 반갑습니다";
+"search_tab_bar_title" = "검색";
+"setting_tab_bar_title" = "설정";
+
+"calender_tab_bar_title" = "달력";
