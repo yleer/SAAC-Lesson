@@ -28,12 +28,51 @@ class AddViewController: UIViewController {
     
     @IBAction func dateButtonClicked(_ sender: UIButton) {
         
+        let alertvc = UIAlertController(title: "날짜 선택", message: "날짜를 선택해주세요.", preferredStyle: .alert)
+        
+//        let contentView = DatePickerViewController()
+        guard let contentView = self.storyboard?.instantiateViewController(withIdentifier: "DatePickerViewController") as? DatePickerViewController else {
+            print("prblem")
+            return
+            
+        }
+        
+        contentView.view.backgroundColor = .gray
+        contentView.preferredContentSize.height = 200
+        
+        let cancel = UIAlertAction(title: "cancel", style: .cancel, handler: nil)
+        let ok = UIAlertAction(title: "ok", style: .default) { _ in
+            
+            let format = DateFormatter()
+            format.dateFormat = "yyyy년 MM월 dd일"
+            let value = format.string(from: contentView.datePicker.date)
+            
+            self.dateButton.setTitle(value, for: .normal)
+        }
+        
+        alertvc.setValue(contentView, forKey: "contentViewController")
+        alertvc.addAction(cancel)
+        alertvc.addAction(ok)
+        self.present(alertvc, animated: true, completion: nil)
+        
+        
+        
+        
+        
     }
     @IBAction func saveButtonClicked(_ sender: UIBarButtonItem) {
+        
+
+        let buttonDate = dateButton.currentTitle!
+//        let formatter = DateFormatter()
+//        formatter.dateFormat = "yyyy년 MM월 dd일"
+        let value = DateFormatter.customFormat.date(from: buttonDate)!
+//        formatter.date(from: buttonDate)!
+        
         let task = UserDiary(
             title: titleTextField.text!,
             content: contentTextView.text,
-            createdDate: Date(),
+            createdDate: value,
             registerDate: Date()
         )
         try! localRealm.write {

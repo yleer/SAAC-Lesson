@@ -28,6 +28,11 @@
 		88649705272F87B300D5BDBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88649707272F87B300D5BDBE /* InfoPlist.strings */; };
 		8864970A272F88DF00D5BDBE /* String + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88649709272F88DF00D5BDBE /* String + Extensions.swift */; };
 		8864970C272F89FB00D5BDBE /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8864970B272F89FB00D5BDBE /* LocalizableStrings.swift */; };
+		88B11D8D2734AD7700E5FAC5 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 88B11D8C2734AD7700E5FAC5 /* FSCalendar */; };
+		88B11D8F2734B52E00E5FAC5 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B11D8E2734B52E00E5FAC5 /* DatePickerViewController.swift */; };
+		88B11D912734C0E600E5FAC5 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B11D902734C0E600E5FAC5 /* CalendarViewController.swift */; };
+		88B11D932734CE7C00E5FAC5 /* RealmQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B11D922734CE7C00E5FAC5 /* RealmQuery.swift */; };
+		88B11D952734D01E00E5FAC5 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B11D942734D01E00E5FAC5 /* Date+Extensions.swift */; };
 		88BF4F1E2733E6D5003704E3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BF4F1D2733E6D5003704E3 /* DetailViewController.swift */; };
 		88E4C43F272FCAC3005877E3 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E4C43E272FCAC3005877E3 /* AddViewController.swift */; };
 		88E4C441272FD007005877E3 /* SeachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E4C440272FD007005877E3 /* SeachViewController.swift */; };
@@ -68,6 +73,10 @@
 		88649708272F87B700D5BDBE /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		88649709272F88DF00D5BDBE /* String + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extensions.swift"; sourceTree = "<group>"; };
 		8864970B272F89FB00D5BDBE /* LocalizableStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableStrings.swift; sourceTree = "<group>"; };
+		88B11D8E2734B52E00E5FAC5 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		88B11D902734C0E600E5FAC5 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		88B11D922734CE7C00E5FAC5 /* RealmQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmQuery.swift; sourceTree = "<group>"; };
+		88B11D942734D01E00E5FAC5 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		88BF4F1D2733E6D5003704E3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		88E4C43E272FCAC3005877E3 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		88E4C440272FD007005877E3 /* SeachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeachViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +95,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88EE6A3227336DBF00F988F0 /* Zip in Frameworks */,
+				88B11D8D2734AD7700E5FAC5 /* FSCalendar in Frameworks */,
 				8842C1C92730C956002005C5 /* RealmSwift in Frameworks */,
 				8842C1C72730C956002005C5 /* Realm in Frameworks */,
 			);
@@ -98,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				8842C1CB2730C971002005C5 /* RealmModel.swift */,
+				88B11D922734CE7C00E5FAC5 /* RealmQuery.swift */,
 			);
 			path = Realm;
 			sourceTree = "<group>";
@@ -140,6 +151,8 @@
 				880AFB872731624900A39EF7 /* Setting.storyboard */,
 				88EE6A2E273368E500F988F0 /* SettingViewController.swift */,
 				880AFB892731630C00A39EF7 /* Calender.storyboard */,
+				88B11D902734C0E600E5FAC5 /* CalendarViewController.swift */,
+				88B11D8E2734B52E00E5FAC5 /* DatePickerViewController.swift */,
 			);
 			path = Week6;
 			sourceTree = "<group>";
@@ -164,6 +177,7 @@
 			children = (
 				886496F2272F738700D5BDBE /* UIFont + Extensions.swift */,
 				88649709272F88DF00D5BDBE /* String + Extensions.swift */,
+				88B11D942734D01E00E5FAC5 /* Date+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -199,6 +213,7 @@
 				8842C1C62730C956002005C5 /* Realm */,
 				8842C1C82730C956002005C5 /* RealmSwift */,
 				88EE6A3127336DBF00F988F0 /* Zip */,
+				88B11D8C2734AD7700E5FAC5 /* FSCalendar */,
 			);
 			productName = Week6;
 			productReference = 886496D3272F6F5C00D5BDBE /* Week6.app */;
@@ -232,6 +247,7 @@
 			packageReferences = (
 				8842C1C52730C956002005C5 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 				88EE6A3027336DBF00F988F0 /* XCRemoteSwiftPackageReference "Zip" */,
+				88B11D8B2734AD7700E5FAC5 /* XCRemoteSwiftPackageReference "FSCalendar" */,
 			);
 			productRefGroup = 886496D4272F6F5C00D5BDBE /* Products */;
 			projectDirPath = "";
@@ -275,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88E4C443272FD37C005877E3 /* SearchTableViewCell.swift in Sources */,
+				88B11D8F2734B52E00E5FAC5 /* DatePickerViewController.swift in Sources */,
 				88EE6A2F273368E500F988F0 /* SettingViewController.swift in Sources */,
 				886496F3272F738700D5BDBE /* UIFont + Extensions.swift in Sources */,
 				88BF4F1E2733E6D5003704E3 /* DetailViewController.swift in Sources */,
@@ -282,9 +299,12 @@
 				8842C1CC2730C971002005C5 /* RealmModel.swift in Sources */,
 				88E4C43F272FCAC3005877E3 /* AddViewController.swift in Sources */,
 				886496DB272F6F5C00D5BDBE /* ViewController.swift in Sources */,
+				88B11D952734D01E00E5FAC5 /* Date+Extensions.swift in Sources */,
 				886496D7272F6F5C00D5BDBE /* AppDelegate.swift in Sources */,
 				886496D9272F6F5C00D5BDBE /* SceneDelegate.swift in Sources */,
 				8864970A272F88DF00D5BDBE /* String + Extensions.swift in Sources */,
+				88B11D932734CE7C00E5FAC5 /* RealmQuery.swift in Sources */,
+				88B11D912734C0E600E5FAC5 /* CalendarViewController.swift in Sources */,
 				88E4C441272FD007005877E3 /* SeachViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -544,6 +564,14 @@
 				version = 10.18.0;
 			};
 		};
+		88B11D8B2734AD7700E5FAC5 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		88EE6A3027336DBF00F988F0 /* XCRemoteSwiftPackageReference "Zip" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/marmelroy/Zip.git";
@@ -564,6 +592,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8842C1C52730C956002005C5 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
 			productName = RealmSwift;
+		};
+		88B11D8C2734AD7700E5FAC5 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88B11D8B2734AD7700E5FAC5 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
 		};
 		88EE6A3127336DBF00F988F0 /* Zip */ = {
 			isa = XCSwiftPackageProductDependency;

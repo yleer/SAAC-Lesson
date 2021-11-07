@@ -120,8 +120,8 @@ extension SeachViewController: UITableViewDataSource, UITableViewDelegate {
         vc.tmpDate = "\(taskToUpdate.createdDate)"
         vc.tmpTitle = taskToUpdate.diaryTitle
         vc.tmpContet = taskToUpdate.diaryContent
-        vc.tmpDiary = loadImageFromDocumentDirectory(imageName: "\(tasks[indexPath.row]).jpg")
-    
+        vc.tmpDiary = loadImageFromDocumentDirectory(imageName: "\(tasks[indexPath.row]._id).jpg")
+        
         
         navigationController?.pushViewController(vc, animated: true)
         
