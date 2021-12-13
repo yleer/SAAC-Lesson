@@ -18,6 +18,7 @@ class AddViewController: UIViewController {
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var dateButton: UIButton!
     @IBOutlet weak var contentTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -75,6 +76,7 @@ class AddViewController: UIViewController {
             createdDate: value,
             registerDate: Date()
         )
+        
         try! localRealm.write {
             localRealm.add(task)
             if let realImage = uploadImage.image{

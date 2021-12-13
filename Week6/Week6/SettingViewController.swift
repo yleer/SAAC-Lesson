@@ -148,7 +148,7 @@ extension SettingViewController: UIDocumentPickerDelegate {
                     print(unzippedFile)
                 })
             }catch{
-                print("not good ")
+                print("not good")
             }
             
         }else{
