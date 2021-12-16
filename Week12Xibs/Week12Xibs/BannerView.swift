@@ -24,13 +24,13 @@ class BannerView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     func loadLayout() {
-        mainLabel.font = .boldSystemFont(ofSize: 15)
+        mainLabel.font = .boldSystemFont(ofSize: 25)
         mainLabel.textColor = .green
         mainLabel.text = "내일 주식이 오를까요?"
         
-        descriptionLabel.font = .systemFont(ofSize: 15)
+        descriptionLabel.font = .systemFont(ofSize: 20)
         descriptionLabel.textColor = .green
         descriptionLabel.text = "맞으면 500원"
         
