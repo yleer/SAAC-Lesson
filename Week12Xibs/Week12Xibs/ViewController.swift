@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseInstallations
 
 class ViewController: UIViewController {
     
@@ -17,6 +18,15 @@ class ViewController: UIViewController {
     let greenView: UIView = UIView()
     let blueView: UIView = UIView()
     
+    override func viewWillAppear(_ animated: Bool) {
+        Installations.installations().delete { error in
+          if let error = error {
+            print("Error deleting installation: \(error)")
+            return
+          }
+          print("Installation deleted");
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -6,9 +6,21 @@
 //
 
 import UIKit
+import FirebaseInstallations
 import SnapKit
 
 class SnapDetailViewController: UIViewController {
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("SADFadsf")
+        Installations.installations().delete { error in
+          if let error = error {
+            print("Error deleting installation: \(error)")
+            return
+          }
+          print("Installation deleted");
+        }
+    }
     
     var activationButton: MainActivateButton = {
        let button = MainActivateButton()

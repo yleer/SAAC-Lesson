@@ -33,7 +33,7 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         let appearence = UITabBarAppearance()
         appearence.configureWithDefaultBackground()
         
-        tabBar.scrollEdgeAppearance = appearence
+//        tabBar.scrollEdgeAppearance = appearence
         tabBar.standardAppearance = appearence
         
         tabBar.tintColor = .black
