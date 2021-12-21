@@ -24,7 +24,6 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         
         view.addSubview(tableView)
-        view.backgroundColor = .green
         tableView.snp.makeConstraints { make in
             make.leading.equalTo(view.snp.leading)
             make.trailing.equalTo(view.snp.trailing)
@@ -34,7 +33,9 @@ class ViewController: UIViewController {
         print("df")
 //
         let header = StretchyHeaderView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 300))
-        header.imageView.image = UIImage(named: "1")
+//        header.imageView.image = UIImage(named: "1")
+//        header.imageView.backgroundColor = .brown
+        header.containerView.backgroundColor = .blue
         
         tableView.tableHeaderView = header
     }
