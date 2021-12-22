@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8865A9AB2772A59B00716AB8 /* BaseViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8865A9AA2772A59B00716AB8 /* BaseViewContoller.swift */; };
+		8865A9AD2772A75D00716AB8 /* NasaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8865A9AC2772A75D00716AB8 /* NasaViewController.swift */; };
+		8865A9B02772A91F00716AB8 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8865A9AF2772A91F00716AB8 /* SignViewController.swift */; };
+		8865A9B32772A99800716AB8 /* SignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8865A9B22772A99800716AB8 /* SignView.swift */; };
+		8865A9B52772C6E800716AB8 /* SignViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8865A9B42772C6E800716AB8 /* SignViewModel.swift */; };
 		88A7902227715402001DB38D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A7902127715402001DB38D /* AppDelegate.swift */; };
 		88A7902427715402001DB38D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A7902327715402001DB38D /* SceneDelegate.swift */; };
 		88A7902627715402001DB38D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A7902527715402001DB38D /* ViewController.swift */; };
@@ -22,6 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8865A9AA2772A59B00716AB8 /* BaseViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewContoller.swift; sourceTree = "<group>"; };
+		8865A9AC2772A75D00716AB8 /* NasaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaViewController.swift; sourceTree = "<group>"; };
+		8865A9AF2772A91F00716AB8 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
+		8865A9B22772A99800716AB8 /* SignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignView.swift; sourceTree = "<group>"; };
+		8865A9B42772C6E800716AB8 /* SignViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewModel.swift; sourceTree = "<group>"; };
 		88A7901E27715402001DB38D /* Week3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A7902127715402001DB38D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88A7902327715402001DB38D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +59,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8865A9AE2772A76500716AB8 /* Nasa */ = {
+			isa = PBXGroup;
+			children = (
+				8865A9AC2772A75D00716AB8 /* NasaViewController.swift */,
+			);
+			path = Nasa;
+			sourceTree = "<group>";
+		};
+		8865A9B12772A92900716AB8 /* Sign */ = {
+			isa = PBXGroup;
+			children = (
+				8865A9AF2772A91F00716AB8 /* SignViewController.swift */,
+				8865A9B22772A99800716AB8 /* SignView.swift */,
+				8865A9B42772C6E800716AB8 /* SignViewModel.swift */,
+			);
+			path = Sign;
+			sourceTree = "<group>";
+		};
 		88A7901527715402001DB38D = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +108,9 @@
 				88A7902F27715406001DB38D /* Info.plist */,
 				88A7903C27717455001DB38D /* UITableviewCell + extension.swift */,
 				88A7904027717726001DB38D /* DummyViewModel.swift */,
+				8865A9AA2772A59B00716AB8 /* BaseViewContoller.swift */,
+				8865A9AE2772A76500716AB8 /* Nasa */,
+				8865A9B12772A92900716AB8 /* Sign */,
 			);
 			path = Week3;
 			sourceTree = "<group>";
@@ -160,14 +191,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8865A9AB2772A59B00716AB8 /* BaseViewContoller.swift in Sources */,
+				8865A9B52772C6E800716AB8 /* SignViewModel.swift in Sources */,
 				88A7904127717726001DB38D /* DummyViewModel.swift in Sources */,
 				88A7903F2771763C001DB38D /* DummyViewController.swift in Sources */,
 				88A7902627715402001DB38D /* ViewController.swift in Sources */,
 				88A7902227715402001DB38D /* AppDelegate.swift in Sources */,
 				88A7903B2771673A001DB38D /* Cast.swift in Sources */,
 				88A7903927715BDA001DB38D /* ApiService.swift in Sources */,
+				8865A9B02772A91F00716AB8 /* SignViewController.swift in Sources */,
 				88A7902427715402001DB38D /* SceneDelegate.swift in Sources */,
+				8865A9B32772A99800716AB8 /* SignView.swift in Sources */,
 				88A7903D27717455001DB38D /* UITableviewCell + extension.swift in Sources */,
+				8865A9AD2772A75D00716AB8 /* NasaViewController.swift in Sources */,
 				88A79043277178C9001DB38D /* UITableViewCellRepresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
