@@ -12,6 +12,10 @@
 		8865A9B02772A91F00716AB8 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8865A9AF2772A91F00716AB8 /* SignViewController.swift */; };
 		8865A9B32772A99800716AB8 /* SignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8865A9B22772A99800716AB8 /* SignView.swift */; };
 		8865A9B52772C6E800716AB8 /* SignViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8865A9B42772C6E800716AB8 /* SignViewModel.swift */; };
+		88941F502773FDD6007AFE69 /* SeSSACFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88941F4C2773FCF7007AFE69 /* SeSSACFramework.framework */; };
+		88941F512773FDD6007AFE69 /* SeSSACFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 88941F4C2773FCF7007AFE69 /* SeSSACFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		88941F542773FDEF007AFE69 /* FramworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88941F532773FDEF007AFE69 /* FramworkViewController.swift */; };
+		889A8D252775491A00D44590 /* TempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889A8D242775491A00D44590 /* TempViewController.swift */; };
 		88A7902227715402001DB38D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A7902127715402001DB38D /* AppDelegate.swift */; };
 		88A7902427715402001DB38D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A7902327715402001DB38D /* SceneDelegate.swift */; };
 		88A7902627715402001DB38D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A7902527715402001DB38D /* ViewController.swift */; };
@@ -26,12 +30,46 @@
 		88A79043277178C9001DB38D /* UITableViewCellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A79042277178C9001DB38D /* UITableViewCellRepresentable.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		88941F4B2773FCF7007AFE69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88941F462773FCF7007AFE69 /* SeSSACFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88941F2A2773FB54007AFE69;
+			remoteInfo = SeSSACFramework;
+		};
+		88941F4D2773FCF7007AFE69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88941F462773FCF7007AFE69 /* SeSSACFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88941F342773FB54007AFE69;
+			remoteInfo = SeSSACFrameworkTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		88941F522773FDD6007AFE69 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				88941F512773FDD6007AFE69 /* SeSSACFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		8865A9AA2772A59B00716AB8 /* BaseViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewContoller.swift; sourceTree = "<group>"; };
 		8865A9AC2772A75D00716AB8 /* NasaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaViewController.swift; sourceTree = "<group>"; };
 		8865A9AF2772A91F00716AB8 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		8865A9B22772A99800716AB8 /* SignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignView.swift; sourceTree = "<group>"; };
 		8865A9B42772C6E800716AB8 /* SignViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewModel.swift; sourceTree = "<group>"; };
+		88941F462773FCF7007AFE69 /* SeSSACFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SeSSACFramework.xcodeproj; path = ../SeSSACFramework/SeSSACFramework.xcodeproj; sourceTree = "<group>"; };
+		88941F532773FDEF007AFE69 /* FramworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramworkViewController.swift; sourceTree = "<group>"; };
+		889A8D242775491A00D44590 /* TempViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempViewController.swift; sourceTree = "<group>"; };
 		88A7901E27715402001DB38D /* Week3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A7902127715402001DB38D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88A7902327715402001DB38D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +91,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88A79037277155D8001DB38D /* SnapKit in Frameworks */,
+				88941F502773FDD6007AFE69 /* SeSSACFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,11 +116,29 @@
 			path = Sign;
 			sourceTree = "<group>";
 		};
+		88941F472773FCF7007AFE69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88941F4C2773FCF7007AFE69 /* SeSSACFramework.framework */,
+				88941F4E2773FCF7007AFE69 /* SeSSACFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88941F4F2773FDD6007AFE69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		88A7901527715402001DB38D = {
 			isa = PBXGroup;
 			children = (
+				88941F462773FCF7007AFE69 /* SeSSACFramework.xcodeproj */,
 				88A7902027715402001DB38D /* Week3 */,
 				88A7901F27715402001DB38D /* Products */,
+				88941F4F2773FDD6007AFE69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +168,8 @@
 				8865A9AA2772A59B00716AB8 /* BaseViewContoller.swift */,
 				8865A9AE2772A76500716AB8 /* Nasa */,
 				8865A9B12772A92900716AB8 /* Sign */,
+				88941F532773FDEF007AFE69 /* FramworkViewController.swift */,
+				889A8D242775491A00D44590 /* TempViewController.swift */,
 			);
 			path = Week3;
 			sourceTree = "<group>";
@@ -125,6 +184,7 @@
 				88A7901A27715402001DB38D /* Sources */,
 				88A7901B27715402001DB38D /* Frameworks */,
 				88A7901C27715402001DB38D /* Resources */,
+				88941F522773FDD6007AFE69 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,12 +227,35 @@
 			);
 			productRefGroup = 88A7901F27715402001DB38D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 88941F472773FCF7007AFE69 /* Products */;
+					ProjectRef = 88941F462773FCF7007AFE69 /* SeSSACFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				88A7901D27715402001DB38D /* Week3 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		88941F4C2773FCF7007AFE69 /* SeSSACFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SeSSACFramework.framework;
+			remoteRef = 88941F4B2773FCF7007AFE69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		88941F4E2773FCF7007AFE69 /* SeSSACFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SeSSACFrameworkTests.xctest;
+			remoteRef = 88941F4D2773FCF7007AFE69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		88A7901C27715402001DB38D /* Resources */ = {
@@ -199,11 +282,13 @@
 				88A7902227715402001DB38D /* AppDelegate.swift in Sources */,
 				88A7903B2771673A001DB38D /* Cast.swift in Sources */,
 				88A7903927715BDA001DB38D /* ApiService.swift in Sources */,
+				889A8D252775491A00D44590 /* TempViewController.swift in Sources */,
 				8865A9B02772A91F00716AB8 /* SignViewController.swift in Sources */,
 				88A7902427715402001DB38D /* SceneDelegate.swift in Sources */,
 				8865A9B32772A99800716AB8 /* SignView.swift in Sources */,
 				88A7903D27717455001DB38D /* UITableviewCell + extension.swift in Sources */,
 				8865A9AD2772A75D00716AB8 /* NasaViewController.swift in Sources */,
+				88941F542773FDEF007AFE69 /* FramworkViewController.swift in Sources */,
 				88A79043277178C9001DB38D /* UITableViewCellRepresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

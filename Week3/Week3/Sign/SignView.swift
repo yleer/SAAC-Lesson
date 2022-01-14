@@ -30,7 +30,7 @@ class SignView: UIView {
         
     }
     
-    func setUpConstraints() {
+    private func setUpConstraints() {
         addSubview(emailTextField)
         addSubview(passwordTextField)
         addSubview(signButton)
